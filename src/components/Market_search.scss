@@ -1,0 +1,106 @@
+.market_search {
+  overflow: auto;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.15rem;
+  height: 1.15rem;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid lightgrey;
+  input {
+    background: whitesmoke;
+    border: 1px solid lightgrey;
+    line-height: 0.71rem;
+    font-size: 0.35rem;
+    padding-top: 0.05rem;
+    border-radius: 0.15rem;
+    width: 73%;
+    outline: none;
+    text-align: center;
+    a {
+      display: block;
+      width: 100%;
+      color: grey;
+      span {
+        padding-right: 0.1rem;
+      }
+    }
+  }
+  & > a, & > span {
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    span {
+      position: absolute;
+      top: -0.28rem;
+      left: 0.25rem;
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      &:after {
+        transform: rotateZ(45deg);
+        display: block;
+        width: 0.28rem;
+        height: 0.28rem;
+        content: "";
+        border: 1px solid grey;
+        border-width: 0 0 1px 1px;
+      }
+      color: grey;
+    }
+  }
+}
+
+.search_content {
+  background: white;
+  border-bottom: 1px solid lightgrey;
+  .ready_made {
+    position: relative;
+    width: 90%;
+    h2 {
+      font-size: 0.39rem;
+      line-height: 1.5rem;
+      text-indent: 0.18rem;
+      span {
+        padding-right: 0.2rem;
+      }
+    }
+    a {
+      display: inline-block;
+      border: 1px solid lightgrey;
+      border-radius: 0.15rem;
+      margin: 0 0 0.3rem 0.3rem;
+      span {
+        display: block;
+        text-align: center;
+        padding: 0.15rem 0.25rem;
+        color: grey;
+        font-size: 0.35rem;
+      }
+    }
+  }
+  nav {
+    margin-top: 0.1rem;
+    position: relative;
+    ul {
+      li {
+        border-top: 1px solid lightgrey;
+        a {
+          text-indent: 0.25rem;
+          line-height: 1.06rem;
+          display: block;
+          span {
+            font-size: 0.35rem;
+            color: grey;
+          }
+        }
+      }
+    }
+  }
+}

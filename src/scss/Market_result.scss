@@ -1,0 +1,207 @@
+.market_result {
+  overflow: hidden;
+  background-color: whitesmoke;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: +200;
+  top: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.15rem;
+  height: 1.15rem;
+  text-align: center;
+  background: white;
+  border-bottom: 1px solid lightgrey;
+  z-index: +2;
+  input {
+    background: whitesmoke;
+    border: 1px solid lightgrey;
+    line-height: 0.71rem;
+    font-size: 0.35rem;
+    padding-top: 0.05rem;
+    border-radius: 0.15rem;
+    width: 73%;
+    outline: none;
+    text-indent: 0.2rem;
+    a {
+      display: block;
+      width: 100%;
+      color: grey;
+      span {
+        padding-right: 0.1rem;
+      }
+    }
+  }
+  & > a, & > span {
+    width: 10%;
+    display: inline-block;
+    position: relative;
+    color: grey;
+    span {
+      position: absolute;
+      top: -0.28rem;
+      left: 0.25rem;
+      display: block;
+      width: 0.5rem;
+      height: 0.5rem;
+      &:after {
+        transform: rotateZ(45deg);
+        display: block;
+        width: 0.28rem;
+        height: 0.28rem;
+        content: "";
+        border: 1px solid grey;
+        border-width: 0 0 1px 1px;
+      }
+    }
+  }
+  & > span {
+    font-size: 1rem;
+    line-height: 0;
+    position: relative;
+    top: 0.2rem;
+  }
+  .nav_block {
+    text-align: left;
+    position: absolute;
+    top: 1.2rem;
+    right: 0.2rem;
+    height: 3.5rem;
+    border-radius: 0.15rem;
+    width: 2.8rem;
+    background: black;
+    z-index: +1;
+    a {
+      p {
+        line-height: 0.85rem;
+        font-size: 0.35rem;
+        span {
+          padding: 0 0.3rem;
+        }
+        color: white;
+      }
+    }
+  }
+  .nav_block:after {
+    position: absolute;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: black;
+    content: "";
+    top: -0.15rem;
+    right: 0.4rem;
+    transform: rotateZ(45deg);
+  }
+}
+.result_content {
+  padding-top: 1.1rem;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  nav {
+    position: relative;
+    top: 0;
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid lightgrey;
+      justify-content: space-between;
+      li {
+        text-align: center;
+        width: 21%;
+        background: white;
+        line-height: 1.1rem;
+        font-size: 0.4rem;
+        span {
+        }
+      }
+      li:last-child {
+        width: 15%;
+      }
+    }
+  }
+  menu {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    padding-bottom: 1.2rem;
+    ul {
+      position: relative;
+      background: white;
+      margin-top: 0.1rem;
+      overflow: auto;
+      height: 100%;
+      padding-bottom: 1rem;
+      li {
+        border-bottom: 1px solid lightgrey;
+        a {
+          display: block;
+          height: 3.05rem;
+          img {
+            border:none;
+            display: block;
+            float: left;
+            width: 25%;
+            background: lightgreen;
+          }
+          div {
+            position: relative;
+            padding: 0.35rem 0.15rem;
+            font-size: 0.4rem;
+            color: black;
+            width: 75%;
+            float: left;
+            font-weight: 100;
+            h3 {
+              height: 1.5em;
+              font-size: 0.38rem;
+              width: 95%;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              span {
+                border: 1px solid darkred;
+                padding: -0.1rem 0;
+                margin-right: 0.2rem;
+                font-size: 0.3rem;
+                color: darkred;
+              }
+            }
+            p {
+              position: absolute;
+              top: 1rem;
+              color: grey;
+            }
+            & > span {
+              &:before {
+                content: "￥";
+              }
+              position: absolute;
+              top: 2.3rem;
+              color: red;
+              font-size: 0.37rem;
+            }
+          }
+        }
+      }
+      &:after{
+        display: block;
+        content:"no more...";
+        text-align: center;
+      }
+    }
+  }
+}
+
+.clear:after {
+  content: "";
+  height: 0;
+  visibility: visible;
+  display: block;
+  clear: both;
+}

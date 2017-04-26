@@ -1,0 +1,52 @@
+.market_index {
+  overflow: auto;
+  background-color: whitesmoke;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 0.15rem;
+  height: 1.15rem;
+  text-align: center;
+  background: white;
+  button {
+    background: whitesmoke;
+    border: 1px solid lightgrey;
+    line-height: 0.75rem;
+    font-size: 0.35rem;
+    padding-top: 0.05rem;
+    border-radius: 0.2rem;
+    width: 95%;
+    a {
+      display: block;
+      width: 100%;
+      color: grey;
+      span {
+        padding-right: 0.1rem;
+      }
+    }
+  }
+}
+
+.aside_left {
+  width: 25%;
+  height: 100%;
+  background: white;
+  float: left;
+  margin-right: 3%;
+  nav {
+    ul {
+      border-bottom: 1px solid lightgrey;
+      li {
+        background: white;
+        border-top: 1px solid lightgrey;
+        line-height: 1.83rem;
+        font-size: 0.4rem;
+        text-align: center;
+      }
+    }
+  }
+}
